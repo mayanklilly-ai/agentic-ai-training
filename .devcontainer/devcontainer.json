@@ -17,7 +17,7 @@
       }
     }
   },
-  "postCreateCommand": "pip install python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert",
+  "postCreateCommand": "pip install uv && uv pip install python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert --index-url https://pypi.org",
   "remoteEnv": {
     "HF_TOKEN": "${localEnv:HF_TOKEN}"
   },
