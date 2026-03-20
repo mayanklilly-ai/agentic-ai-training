@@ -5,8 +5,6 @@ RAG Pipelines, AI Agents with LangGraph, MCP, and A2A.
 
 ## 🚀 Launch the Training Environment
 
-[![Open in GitHub Codespaces]
-(https://github.com/codespaces/badge.svg)]
 (https://github.com/mayanklilly-ai/agentic-ai-training)
 
 Click the button above. Your environment will be ready in ~2 minutes.
