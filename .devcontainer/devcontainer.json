@@ -17,10 +17,10 @@
       }
     }
   },
-  "postCreateCommand": "pip install uv && uv pip install python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert --index-url https://pypi.org",
+  "postCreateCommand": "pip install python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert",
   "remoteEnv": {
     "HF_TOKEN": "${localEnv:HF_TOKEN}"
   },
   "forwardPorts": [8765],
-  "postAttachCommand": "echo Container ready. HF_TOKEN loaded: ${HF_TOKEN:0:6}..."
+  "postAttachCommand": "echo '✅ Container ready. HF_TOKEN loaded.'"
 }
