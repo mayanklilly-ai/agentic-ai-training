@@ -17,7 +17,7 @@
       }
     }
   },
-  "postCreateCommand": "pip install ipykernel python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert && python -m ipykernel install --user --name python3 --display-name 'Python 3.11 (Codespace)'",
+  "postCreateCommand": "pip install ipykernel python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert fastapi uvicorn && python -m ipykernel install --user --name python3 --display-name 'Python 3.11 (Codespace)'",
   "remoteEnv": {
     "HF_TOKEN": "${localEnv:HF_TOKEN}"
   },
