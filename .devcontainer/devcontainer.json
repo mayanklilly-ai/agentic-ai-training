@@ -10,17 +10,17 @@
         "ms-toolsai.jupyter-renderers"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "notebook.cellToolbarLocation": {
-          "default": "right"
-        }
+        "python.defaultInterpreterPath": "/usr/local/bin/python3",
+        "jupyter.kernelSpecFindPaths": [],
+        "python.terminal.activateEnvironment": false,
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
       }
     }
   },
-  "postCreateCommand": "pip install python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert",
+  "postCreateCommand": "pip install ipykernel python-dotenv transformers sentence-transformers chromadb langchain langchain-community langgraph huggingface_hub matplotlib torch fastmcp httpx networkx nbformat nbconvert && python -m ipykernel install --user --name python3 --display-name 'Python 3.11 (Codespace)'",
   "remoteEnv": {
     "HF_TOKEN": "${localEnv:HF_TOKEN}"
   },
   "forwardPorts": [8765],
-  "postAttachCommand": "echo '✅ Container ready. HF_TOKEN loaded.'"
+  "postAttachCommand": "echo '✅ Container ready. Python 3.11 kernel active. HF_TOKEN loaded.'"
 }
